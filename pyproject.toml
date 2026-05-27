@@ -1,0 +1,21 @@
+[project]
+name = "blogs-quarto"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dallin Wagner", email = "205811223+Dallin-Wagner@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "lets-plot>=4.10.1",
+    "polars[async,database,excel,fsspec,graph,numpy,plot,pyarrow,style,timezone]>=1.41.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.15,<0.12.0"]
+build-backend = "uv_build"
+
+
+[tool.uv]
+  package = false
